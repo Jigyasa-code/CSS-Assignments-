@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link href="/src/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-white overflow-x-hidden">
+    <header>
+<!--navbar-->
+<div class="top-0 bg-[#010101] h-[65px] w-screen text-white flex justify-between items-center">
+  <i class="fa-solid fa-cube text-4xl"></i>
+<button class="bg-green-600 text-black hover:bg-green-800 hover:text-white">+Follow</button>
+<h1>ScrollEffect</h1>
+<div class="flex justify-evenly items-center w-96">
+<button><i class="fa-solid fa-heart"></i></button>
+<button>Settings</button>
+<button class="bg-blue-600 text-black hover:bg-blue-800 hover:text-white">Sign Up</button>
+<button class="bg-blue-600 text-black hover:bg-blue-800 hover:text-white">Log In</button>
+</div>
+</div>
+<!--title-->
+<div class="mx-auto mt-20 h-[55px] w-full flex justify-center items-center text-black">
+<div class="bg-[#FF6B6B]"><h1>Impact of Social Media on Mental Health of Young Adults</h1></div>
+</div>
+<!--form-->
+<div class="mx-auto mt-20 w-[1000px] h-full bg-[#FBE8A6] text-3xl text-black">
+  <form>
+    <table class="border-separate border-spacing-10 p-10">
+      <!--name-->
+    <tr>
+      <td><h3>Name</h3></td>
+      <td><input type="text" class="bg-white text-black" placeholder="Enter your name"></td>
+    </tr>
+    <!--age-->
+    <tr>
+      <td><label for="Age">What is your Age?</label></td>
+    <td><div class="flex flex-col items-start">
+      <div><input type="radio" value="Under 18" name="Age" id="Age">Under 18</div>
+<div><input type="radio" value="18-22" name="Age" id="Age">18-22</div>
+<div><input type="radio" value="23-26" name="Age" id="Age">23-26</div>
+<div><input type="radio" value="27-30" name="Age" id="Age">27-30</div>
+<div><input type="radio" value="Above 30" name="Age" id="Age">Above 30</div>
+</div>
+</td>
+</tr>
+<!--gender-->
+<tr>
+      <td><label for="Gender">What is your Gender?</label></td>
+    <td><div class="flex flex-col items-start">
+      <div><input type="radio" value="Male" name="Gender" id="Gender">Male</div>
+<div><input type="radio" value="Female" name="Gender" id="Gender">Female</div>
+<div><input type="radio" value="Non-binary" name="Gender" id="Gender">Non-binary</div>
+<div><input type="radio" value="Prefer not to say" name="Gender" id="Gender">Prefer not to say</div>
+</div>
+</td>
+</tr>
+<!--profession-->
+<tr>
+      <td><label for="profession">What is your profession?</label></td>
+    <td><div class="flex flex-col items-start">
+      <div><input type="radio" value="A student" name="profession" id="profession">A student</div>
+<div><input type="radio" value="Employed" name="profession" id="profession">Employed</div>
+<div><input type="radio" value="Unemployed" name="profession" id="profession">Unemployed</div>
+<div><input type="radio" value="Other" name="profession" id="profession">Other</div>
+</div>
+</td>
+</tr>
+<!--platforms-->
+<tr>
+      <td><label for="platforms">Which social media platforms do you use regularly?</label></td>
+    <td><div class="flex flex-col items-start">
+      <div><input type="checkbox" value="Instagram" name="platforms" id="platforms">Instagram</div>
+<div><input type="checkbox" value="Facebook" name="platforms" id="platforms">Facebook</div>
+<div><input type="checkbox" value="X (formerly Twitter)" name="platforms" id="platforms">X (formerly Twitter)</div>
+<div><input type="checkbox" value="Snapchat" name="platforms" id="platforms">Snapchat</div>
+<div><input type="checkbox" value="Other" name="platforms" id="platforms">Other</div>
+</div>
+</td>
+</tr>
+<!--time-->
+<tr>
+      <td><label for="time">On average, how many hours per day do you spend on social media?</label></td>
+    <td><div class="flex flex-col items-start">
+      <div><input type="radio" value="Less than 1 hour" name="time" id="time">Less than 1 hour</div>
+       <div><input type="radio" value="1–2 hours" name="time" id="time">1–2 hours</div>
+ <div><input type="radio" value="3–4 hours" name="time" id="time">3–4 hours</div>
+  <div><input type="radio" value="5+ hours" name="time" id="time">5+ hours</div>
+</div>
+</td>
+</tr>
+<!--feeling-->
+<tr>
+      <td><label for="feeling">Do you feel anxious if you haven’t checked your social media in a while?</label></td>
+    <td>
+      <select name="feeling" id="feeling" class="bg-[#EAF6FF]">
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+<option value="Sometimes">Sometimes</option>
+      </select>
+</td>
+</tr>
+<!--compare-->
+<tr>
+      <td><label for="compare">Have you ever compared your life to others’ based on what they post on social media?</label></td>
+    <td>
+      <select name="compare" id="compare" class="bg-[#EAF6FF]">
+<option value="Frequently">Frequently</option>
+<option value="Sometimes">Sometimes</option>
+<option value="Rarely">Rarely</option>
+<option value="Never">Never</option>
+      </select>
+</td>
+</tr>
+<!--affect-->
+<tr>
+      <td><label for="affect">Does social media ever affect your self-esteem?</label></td>
+    <td>
+      <select name="affect" id="affect" class="bg-[#EAF6FF]">
+<option value="Yes, negatively">Yes, negatively</option>
+<option value="Yes, positively">Yes, positively</option>
+<option value="No">No</option>
+      </select>
+</td>
+</tr>
+<!--feedback-->
+<tr>
+<td><label for="feedback">After spending time on social media, how do you usually feel?</label></td>
+<td><textarea name="feedback" id="feedback" placeholder="Describe your feelings here"></textarea></td>
+</tr>
+<!--consider-->
+<tr>
+      <td><label for="consider">Would you consider reducing your time on social media for better mental health?</label></td>
+    <td><div class="flex flex-col items-start">
+      <div><input type="radio" value="Yes" name="consider" id="consider">Yes</div>
+<div><input type="radio" value="No" name="consider" id="consider">No</div>
+<div><input type="radio" value="Not sure" name="consider" id="consider">Not sure</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+  <button class="bg-blue-600 text-black hover:bg-blue-800 hover:text-white"><input type="Submit" value="Submit"></button>
+</td>
+</tr>
+</table>
+  </form>
+</div>
+</header>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
