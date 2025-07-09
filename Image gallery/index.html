@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image gallery</title>
+     <link href="/src/style.css" rel="stylesheet">
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-white overflow-x-hidden">
+    <!--side section-->
+<div class="fixed left-0 top-0 h-full w-[80px] bg-white text-gray-400 flex flex-col justify-between items-center text-3xl">
+<i class="fa-solid fa-boxes-stacked hover:bg-gray-200 flex justify-center items-center h-12 w-12 rounded-2xl"></i>
+<i class="fa-regular fa-image hover:bg-gray-200 flex justify-center items-center h-12 w-12 rounded-2xl"></i>
+<i class="fa-solid fa-pen-nib hover:bg-gray-200 flex justify-center items-center h-12 w-12 rounded-2xl"></i>
+<i class="fa-regular fa-compass hover:bg-gray-200 flex justify-center items-center h-12 w-12 rounded-2xl"></i>
+<i class="fa-regular fa-images hover:bg-gray-200 flex justify-center items-center h-12 w-12 rounded-2xl"></i>
+<i class="fa-solid fa-download hover:bg-gray-200 flex justify-center items-center h-12 w-12 rounded-2xl"></i>
+<i class="fa-solid fa-user hover:bg-gray-200 flex justify-center items-center h-12 w-12 rounded-2xl"></i>
+<i class="fa-solid fa-language hover:bg-gray-200 flex justify-center items-center h-12 w-12 rounded-2xl"></i>
+<i class="fa-solid fa-bars hover:bg-gray-200 flex justify-center items-center h-12 w-12 rounded-2xl"></i>
+</div>
+<div class="flex flex-col gap-y-7 w-[1530px] bg-white h-full box-border">
+<!--navbar-->
+<div class="h-[60px] w-full top-0 ml-20 flex flex-row">
+<div class="w-[1000px] h-[40px] rounded-full bg-gray-200 flex flex-row items-center text-2xl text-gray-400 mt-[8px] ml-8">
+  <i class="fa-solid fa-magnifying-glass ml-4 hover:text-black"></i>
+  <p class="ml-4">films</p>
+<i class="fa-solid fa-xmark ml-200 hover:text-black"></i>
+<div class="h-6 w-px bg-gray-400 ml-4"></div>
+<i class="fa-solid fa-rectangle-list ml-4 hover:text-black"></i>
+</div>
+<div class="flex flex-row items-center">
+<p class="font-medium text-black ml-8">Get Unsplash+</p>
+<p class="text-gray-400 hover:text-black ml-8">Log in</p>
+<div class="h-[30px] w-[140px] ml-8 flex items-center justify-center rounded-2xl bg-white text-gray-400 hover:text-black hover:border-2 hover:border-black">Submit an image</div>
+</div>
+</div>
+<!--2nd box-->
+<div class="flex flex-row gap-x-4 ml-12 w-full">
+  <a href="https://www.istockphoto.com/photo/contact-sheet-gm493649410-77010479">
+    <img src="image1.webp" alt="image 1" class="w-[320px] h-[215px]"></a>
+    <a href="https://www.istockphoto.com/photo/a-young-woman-is-watching-a-movie-and-is-eating-popcorn-at-the-cinema-gm1271522553-374082253">
+      <img src="image2.webp" alt="image 2" class="w-[320px] h-[215px]"></a>
+      <a href="https://www.istockphoto.com/photo/cameraman-on-set-gm512923221-47620116">
+        <img src="image3.webp" alt="image 3" class="w-[320px] h-[215px]"></a>
+        <a href="https://www.istockphoto.com/photo/film-crew-on-location-gm173617315-8196404">
+          <img src="image4.webp" alt="image 4" class="w-[320px] h-[215px]"></a>
+          <a href="https://www.istockphoto.com/photo indian-cinematography-film-industry-concept-3d-rendering-isolated-on-white-background-gm862445698-142945799">
+            <img src="image5.webp" alt="image 5" class="w-[320px] h-[215px]"></a>
+</div>
+<!--3rd box-->
+<div class="flex flex-row w-full items-center ml-32">
+<div class="flex text-gray-400 gap-x-8 text-[20px]">
+<div class="flex flex-row justify-between items-center text-black underline"><i class="fa-regular fa-image"></i>
+<p>Photos 2.6k</p></div>
+<div class="flex flex-row justify-between items-center hover:text-black"><i class="fa-solid fa-pen-nib"></i>
+<p>Illustrations 80</p></div>
+<div class="flex flex-row justify-between items-center hover:text-black"><i class="fa-regular fa-images"></i>
+<p>Collections 88</p></div>
+<div class="flex flex-row justify-between items-center hover:text-black"><i class="fa-solid fa-users"></i>
+<p>Users 346</p></div>
+</div>
+
+<div class="flex text-gray-400 gap-x-4 ml-72 text-[20px]">
+  <select name="License" id="License" class="border-2 hover:bg-gray-200">
+    <option value="" disabled selected hidden>License</option>
+    <option value="All">All</option>
+    <option value="Unsplash+">Unsplash+</option>
+    <option value="Free">Free</option>
+  </select>
+
+<select name="Orientation" id="Orientation" class="border-2 hover:bg-gray-200">
+<option value="" disabled selected hidden>Orientation</option>
+    <option value="All">All</option>
+    <option value="Landscape">Landscape</option>
+    <option value="Portrait">Portrait</option>
+    <option value="Square">Square</option>
+</select>
+
+<select name="Sort by Relevance" id="Sort by Relevance" class="border-2 hover:bg-gray-200">
+<option value="" disabled selected hidden>Sort by <p class="font-bold">Relevance</p></option>
+    <option value="Relevance">Relevance</option>
+    <option value="Newest">Newest</option>
+    <option value="Curated">Curated</option>
+</select>
+</div>
+</div>
+<div class="w-full h-px bg-gray-400 ml-20"></div>
+<!--heading-->
+<h1 class="text-black ml-40">Films</h1>
+<div class="flex flex-row gap-x-4 items-center ml-40 text-[#767676]">
+<div class="flex justify-center items-center h-[40px] w-[150px] p-[10px] border-2 rounded-[8px] border-[#767676] hover:text-black hover:border-black">Movie</div>
+<div class="flex justify-center items-center h-[40px] w-[150px] p-[10px] border-2 rounded-[8px] border-[#767676] hover:text-black hover:border-black">Film</div>
+<div class="flex justify-center items-center h-[40px] w-[150px] p-[10px] border-2 rounded-[8px] border-[#767676] hover:text-black hover:border-black">Person</div>
+<div class="flex justify-center items-center h-[40px] w-[150px] p-[10px] border-2 rounded-[8px] border-[#767676] hover:text-black hover:border-black">Cinema</div>
+<div class="flex justify-center items-center h-[40px] w-[150px] p-[10px] border-2 rounded-[8px] border-[#767676] hover:text-black hover:border-black">Human</div>
+<div class="flex justify-center items-center h-[40px] w-[150px] p-[10px] border-2 rounded-[8px] border-[#767676] hover:text-black hover:border-black">8mm Film</div>
+<div class="flex justify-center items-center h-[40px] w-[150px] p-[10px] border-2 rounded-[8px] border-[#767676] hover:text-black hover:border-black">Black</div>
+<div class="flex justify-center items-center h-[40px] w-[150px] p-[10px] border-2 rounded-[8px] border-[#767676] hover:text-black hover:border-black">Electronic</div>
+<i class="fa-solid fa-angle-right"></i>
+</div>
+<!--photo section-->
+<div class="flex flex-wrap w-screen gap-x-4 ml-40">
+ <a href="https://unsplash.com/photos cinematography-concept-film-movie-reel-on-a-movie-clapper-and-a-wooden-background-3d-illustration-0-s3iuLsbro">
+    <img src="image6.avif" alt="image 6" class="w-[425px] h-[220px]"></a>
+<a href="https://unsplash.com/photos/person-holding-clapperboard-Hn3S90f6aak">
+    <img src="image7.avif" alt="image 7" class="w-[362px] h-[290px]"></a>
+<a href="https://unsplash.com/photos/four-reel-films-lying-on-white-table-Lq6rcifGjOU">
+    <img src="image8.avif" alt="image 8" class="w-[362px] h-[270px] mt-12"></a>
+<a href="https://unsplash.com/photos/the-walking-dead-dvd-movie-wMkaMXTJjlQ">
+    <img src="image9.avif" alt="image 9" class="w-[425px] h-[480px] -mt-16"></a>
+<a href="https://unsplash.com/photos/a-row-of-red-seats-in-a-theater-6dVGbYs-jRw">
+    <img src="image10.avif" alt="image 10" class="w-[362px] h-[528px]"></a>
+    <a href="https://unsplash.com/photos/a-group-of-films-stacked-on-top-of-each-other-jr33RScwaFE">
+    <img src="image11.avif" alt="image 11" class="w-[362px] h-[530px] mt-8"></a>
+<a href="https://unsplash.com/photos/red-cinema-chair-evlkOfkQ5rE">
+    <img src="image12.avif" alt="image 12" class="w-[425px] h-[240px] -mt-28"></a>
+    <a href="https://unsplash.com/photos/person-captures-woman-playing-guitar-from-the-camera-5MUw_NHo5i4">
+    <img src="image13.avif" alt="image 13" class="w-[362px] h-[240px]"></a>
+    <a href="https://unsplash.com/photos/a-red-and-white-striped-bag-of-popcorn-next-to-a-red-and-white-striped-bag-djvkPJbH3bE">
+    <img src="image14.avif" alt="image 14" class="w-[362px] h-[240px] mt-8"></a>
+</div>
+
+<div class="flex justify-center items-center h-[60px] w-[1185px] p-[10px] border-2 rounded-[8px] border-[#767676] text-[#767676] hover:text-black hover:border-black ml-40 mt-4">Load more</div>
+<!--Premium images-->
+<div class="flex flex-row mt-12 ml-40 text-2xl text-black"><div class="font-medium">Browse premium images on iStock</div> | Claim your discount now</div>
+<div class="ml-40 flex flex-wrap gap-x-8">
+  <a href="https://www.istockphoto.com/photo/movie-projector-on-dark-background-gm1007557230-271848319">
+    <img src="image15.webp" alt="image 15" class="w-[270px] h-[190px]"></a>
+<a href="https://www.istockphoto.com/photo/young-woman-using-photo-sitting-on-sofa-at-home-stock-photo-gm2098254907-566227437">
+    <img src="image16.webp" alt="image 16" class="w-[270px] h-[190px]"></a>
+    <a href="https://www.istockphoto.com/photo/video-archives-concept-gm1032516536-276549598">
+    <img src="image17.webp" alt="image 17" class="w-[270px] h-[190px]"></a>
+    <a href="https://www.istockphoto.com/photo/a-robotic-intelligence-works-as-a-cameraman-gm1475855783-505252490">
+    <img src="image18.webp" alt="image 18" class="w-[270px] h-[190px]"></a>
+<a href="https://www.istockphoto.com/photo/a-robotic-intelligence-works-as-a-cameraman-gm1475855783-505252490">
+    <img src="image19.webp" alt="image 19" class="w-[270px] h-[190px] mt-8"></a>
+    <a href="https://www.istockphoto.com/photo/a-robotic-intelligence-works-as-a-cameraman-gm1475855783-505252490">
+    <img src="image20.webp" alt="image 20" class="w-[270px] h-[190px] mt-8"></a>
+    <a href="https://www.istockphoto.com/photo/a-robotic-intelligence-works-as-a-cameraman-gm1475855783-505252490">
+    <img src="image21.webp" alt="image 21" class="w-[270px] h-[190px] mt-8"></a>
+    <a href="https://www.istockphoto.com/photo/a-robotic-intelligence-works-as-a-cameraman-gm1475855783-505252490">
+    <img src="image22.webp" alt="image 22" class="w-[270px] h-[190px] mt-8"></a>
+</div>
+
+<div class="flex flex-col justify-center items-center mt-12 ml-40 text-black">
+  <i class="fa-solid fa-boxes-stacked text-4xl"></i>
+  <p class="mt-4">Make something awesome</p>
+</div>
+<!--footer-->
+<div class="ml-20 mt-12 bg-[#d5cccc]">
+  <div class="flex flex-row items-center gap-x-8">
+<a href="https://www.facebook.com/unsplash/" target="_main"><img src="facebook.png" alt="facebook"></a>
+<a href="https://x.com/unsplash" target="_main"><img src="X.png" alt="X"></a>
+<a href="https://www.instagram.com/unsplash/" target="_main"><img src="instagram.png" alt="instagram"></a>
+</div>
+<div class="flex flex-row gap-x-16 items-center text-black">
+<p class="hover:underline hover:font-bold">About</p>
+<p class="hover:underline hover:font-bold">Contact</p>
+<p class="hover:underline hover:font-bold">Privacy Policy</p>
+</div>
+<p class="text-black mt-4">&copy; 2025 Unsplash. All rights reserved.</p>
+</div>
+
+</div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
