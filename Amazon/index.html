@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en" class="min-h-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link href="/src/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-white overflow-x-hidden" id="Back to top">
+    <div class="flex flex-col gap-x-0 w-full">
+<!--navbar-->
+<div class="bg-[#0F1111] h-[60px] w-full flex flex-row justify-between items-center">
+<div class="bg-[url('amazon.jpg')] bg-cover bg-center w-[130px] h-[50px] hover:border-2 hover:border-white"></div>
+<div class="text-white flex flex-row justify-center items-center hover:border-2 hover:border-white">
+  <i class="fa-solid fa-location-dot"></i>
+  <div class="flex flex-col">
+    <p>Delivering to Greater N...201311</p>
+    <p class="font-bold">Update location</p>
+  </div>
+</div>
+<!--search bar-->
+<div class="flex flex-row justify-between items-center rounded-[7px] overflow-hidden border">
+<select name="All" id="All" class="bg-gray-300 w-[55px] h-[48px] hover:bg-gray-400 text-black">
+    <option value="" disabled selected hidden>All</option>
+    <option value="Beauty">Beauty</option>
+    <option value="Books">Books</option>
+    <option value="App and Games">App and Games</option>
+    <option value="Deals">Deals</option>
+  </select>
+  <input class="bg-[#FFFFFF] text-gray-400 w-[500px] h-[48px]" placeholder="Search Amazon.in"></input>
+  <i class="fa-solid fa-magnifying-glass w-[45px] bg-amber-300 h-[48px] flex justify-center items-center hover:bg-yellow-500 text-black"></i>
+</div>
+<!--language-->
+<div class="flex flex-row hover:border-2 hover:border-white">
+  <img src="flag.png" alt="flag" class="h-[25px] w-[35px] mr-2">
+<select name="lang" id="lang" class="border-none h-[30px] w-[50px]">
+  <option value="EN" class="text-black">EN</option>
+  <option value="Marathi" class="text-black">Marathi</option>
+  <option value="Telgu" class="text-black">Telgu</option>
+  <option value="Tamil" class="text-black">Tamil</option>
+  <option value="Gujrati" class="text-black">Gujrati</option>
+</select>
+</div>
+
+<div class="hover:border-2 hover:border-white">
+  <p>Hello, sign in</p>
+  <p class="font-bold">Accounts & Lists</p>
+</div>
+
+<div class="hover:border-2 hover:border-white">
+  <p>Return</p>
+  <p class="font-bold">& Orders</p>
+</div>
+
+<div class="flex flex-row justify-center items-center hover:border-2 hover:border-white">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <p>Cart</p>
+</div>
+
+</div>
+<!--2nd box-->
+<div class="min-w-screen h-[50px] bg-[#232F3E] flex flex-row">
+<button class="flex flex-row justify-center items-center bg-[#232F3E] hover:border-2 hover:border-white px-2">
+  <i class="fa-solid fa-bars"></i>
+  <p>All</p>
+</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Fresh</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">MX Player</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Sell</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Bestsellers</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Today's Deals</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Mobiles</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Customer Service</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">New Releases</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Fashion</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Amazon Pay</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Electronics</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Home & Kitchen</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Computers</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Books</button>
+<button class="bg-[#232F3E] hover:border-2 hover:border-white px-2">Car & Motorbike</button>
+
+</div>
+<!--3rd box-->
+<div class="bg-blue-500 h-[400px] w-full">
+<div class=" flex justify-start items-center"><i class="fa-solid fa-angle-left"></i></div>
+<div class="flex justify-end items-center"><i class="fa-solid fa-angle-right"></i></div>
+
+<div class="flex flex-row justify-center items-center gap-x-12">
+<div class="flex flex-col justify-center items-center font-bold text-4xl">
+<p class="py-2">prime day</p>
+<div class="bg-[url('smile.png')] bg-cover bg-center h-[30px] w-[60px]"></div>
+<p class="py-2 px-2">12 - 14 July</p>
+
+<div class="flex flex-row">
+<div class="flex flex-col px-2">
+  <p class="text-sm font-light">Powered by</p>
+  <p class="text-[15px]">SAMSUNG Galaxy M36 5G</p>
+</div>
+<div class="w-[1px] h-10 bg-white"></div>
+<div class="flex flex-col px-2">
+  <p class="text-sm font-light">Co - Powered by</p>
+  <p class="text-[15px]">intel core</p>
+</div>
+
+</div>
+
+</div>
+<!---->
+<div class="w-[1px] h-60 bg-white"></div>
+<div class="flex flex-col">
+  <p class="text-2xl px-2 py-2 font-medium">Only for Prime members</p>
+  <p class="font-bold text-4xl px-2 py-4">Early deals Live now</p>
+  <div class="flex justify-center items-center bg-amber-300 rounded-full h-10 w-32 text-[15px] hover:bg-yellow-500">Join Prime Now</div>
+
+  <div class="w-80 h-10 bg-white flex flex-row justify-center items-center mt-4">
+<div class="bg-orange-500 flex flex-row justify-center items-center px-2 mr-1">
+  <i class="fa-solid fa-info"></i>
+  <p>ICICI Bank</p>
+</div>
+<div class="w-px h-6 bg-black"></div>
+<div class="text-blue-600 flex flex-row justify-center items-center px-2">
+  <i class="fa-solid fa-circle-notch"></i>
+  <div class="flex flex-row"><p class="text-blue-800">SBI</p> card</div>
+</div>
+<div class="w-px h-6 bg-black"></div>
+<p class="text-black font-bold px-2">10% Savings^</p>
+  </div>
+
+  <p class="text-sm">*T&C apply</p>
+</div>
+
+<div class="bg-[url('random.webp')] bg-cover bg-center h-[300px] w-[300px]"></div>
+
+</div>
+
+</div>
+<!--products 1-->
+<div class="h-full w-full bg-gray-200">
+  <div class="flex flex-row justify-around gap-x-6">
+  <!--1st box-->
+<div class="h-[500px] w-[400px] bg-white">
+<p class="font-bold text-black text-2xl pb-6">Appliances for your home | Up to 55% off</p>
+<div class="flex flex-wrap justify-around items-center gap-x-4">
+  <div>
+<div class="bg-[url('air-conditioner.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">Air conditioner</p>
+</div>
+
+<div>
+<div class="bg-[url('Refrigrator.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">Refrigerator</p>
+</div>
+
+<div>
+<div class="bg-[url('microwaves.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">Microwaves</p>
+</div>
+
+<div>
+<div class="bg-[url('washing-machine.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">Washing machine</p>
+</div>
+
+</div>
+<p class="text-blue-600 hover:text-black">See more</p>
+</div>
+<!--2nd box-->
+<div class="h-[500px] w-[400px] bg-white">
+<p class="font-bold text-black text-2xl pb-6">Revamp your home in style</p>
+<div class="flex flex-wrap justify-around items-center gap-x-4">
+  <div class="h-[130px] w-[180px] mb-14">
+<div class="bg-[url('cushion.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">Cushion covers, bedsheets & more</p>
+</div>
+
+<div>
+<div class="bg-[url('vases.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">Figurines, vases & more</p>
+</div>
+
+<div>
+<div class="bg-[url('home-storage.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">Home storage</p>
+</div>
+
+<div>
+<div class="bg-[url('lighting-solutions.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">Lightning solutions</p>
+</div>
+
+</div>
+<p class="text-blue-600 hover:text-black">Explore more</p>
+</div>
+<!--3rd box-->
+<div class="h-[500px] w-[400px] bg-white">
+<p class="font-bold text-black text-2xl pb-6">PlayStation 5 Slim & Accessories | No Cost EMI*</p>
+<div class="flex flex-wrap justify-around items-center gap-x-4">
+  <div>
+<div class="bg-[url('PS5-1.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">PS5 Slim digital edition</p>
+</div>
+
+<div>
+<div class="bg-[url('PS5-2.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">PS5 Slim disc edition</p>
+</div>
+
+<div class="h-[130px] w-[160px]">
+<div class="bg-[url('PS5-3.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">PS5 Slim Fortnite digital edition</p>
+</div>
+
+<div class="h-[130px] w-[160px]">
+<div class="bg-[url('PS5-4.jpg')] bg-cover bg-center h-[130px] w-[160px]"></div>
+<p class="text-black pb-8">PS5 DualSense Wireless Controller</p>
+</div>
+
+</div>
+<p class="text-blue-600 hover:text-black mt-14">See all deals</p>
+</div>
+<!--4th box-->
+<div class="h-[150px] w-[350px] bg-white">
+<p class="font-bold text-black text-2xl pb-6">Sign in for your best experience</p>
+<div class="flex justify-center items-center h-[30px] w-[300px] rounded-full bg-yellow-300 text-black hover:bg-yellow-400 ml-4">Sign in securely</div>
+</div>
+
+</div>
+<!--products 2-->
+<div class="bg-white h-[290px] w-full my-6">
+  <div class="flex flex-row items-center gap-x-4 py-6">
+  <p class="text-black text-2xl font-bold">Up to 75% off | Home and kitchen products from Emerging Businesses</p>
+  <p class="text-blue-600 hover:text-black hover:underline">See more</p>
+  </div>
+  <div class="flex flex-row justify-around items-center">
+<div class="bg-[url('image1.jpg')] bg-cover bg-center h-[200px] w-[100px]"></div>
+<div class="bg-[url('image2.jpg')] bg-cover bg-center h-[200px] w-[225px]"></div>
+<div class="bg-[url('image3.jpg')] bg-cover bg-center h-[195px] w-[270px]"></div>
+<div class="bg-[url('image4.jpg')] bg-cover bg-center h-[200px] w-[198px]"></div>
+<div class="bg-[url('image5.jpg')] bg-cover bg-center h-[200px] w-[190px]"></div>
+<div class="bg-[url('image6.jpg')] bg-cover bg-center h-[200px] w-[205px]"></div>
+<div class="bg-[url('image7.jpg')] bg-cover bg-center h-[200px] w-[81px]"></div>
+  </div>
+
+</div>
+
+ 
+<!--products 3-->
+<div class="flex flex-row justify-around items-center gap-x-6">
+<!--1st box-->
+<div class="h-[460px] w-[320px] bg-white">
+<p class="font-bold text-black text-2xl pb-6">Keep shopping for</p>
+  <div>
+<div class="bg-[url('image8.jpg')] bg-cover bg-center h-[150px] w-[160px] ml-24 pb-6"></div>
+<p class="text-black pb-2">BeautifulMe Durable Moroccan Hammam Exfoliating Mitt Kessa Scrub Glove Preparation Shower Scrub…</p>
+
+<div class="text-black text-2xl font-medium flex flex-row items-center gap-x-4 pb-4">₹279.00 
+  <div class="text-sm font-light flex flex-row">M.R.P: <p class="line-through">₹1,699.00</p></div>
+</div>
+
+</div>
+<div class="flex flex-row justify-around items-center pb-6">
+<div class="bg-[url('image9.jpg')] bg-cover bg-center h-[65px] w-[65px] border-4 border-blue-900 rounded-2xl"></div>
+<div class="bg-[url('image10.jpg')] bg-cover bg-center h-[65px] w-[65px] border-2 border-black rounded-2xl hover:border-blue-600"></div>
+<div class="bg-[url('image11.jpg')] bg-cover bg-center h-[65px] w-[65px] border-2 border-black rounded-2xl hover:border-blue-600"></div>
+<div class="bg-[url('image12.jpg')] bg-cover bg-center h-[65px] w-[65px] border-2 border-black rounded-2xl hover:border-blue-600"></div>
+</div>
+
+<p class="text-blue-600 hover:text-black">See more</p>
+</div>
+<!--2nd box-->
+<div class="h-[460px] w-[350px] bg-white">
+<p class="font-bold text-black text-2xl pb-10">Up to 60% off | Top picks, best offers from Small Businesses</p>
+  <div>
+<div class="relative flex flex-row justify-center items-center pb-10">
+  <i class="fa-solid fa-angle-left text-6xl text-black z-10 absolute left-0"></i>
+   <img src="image14.jpg" alt="left image" class="w-[82px] h-[180px] opacity-70 pr-2">
+  <img src="image13.jpg" alt="center image">
+   <img src="image15.jpg" alt="right image" class="w-[82px] h-[180px] opacity-70 pl-2">
+   <i class="fa-solid fa-angle-right text-6xl text-black z-10 absolute right-0"></i>
+</div>
+<p class="text-black pb-2">Bajaj Herculo Heavy Weight Dry Iron | 1100 Watts Heavy Weight Dry Iron | Duraglide S…</p>
+
+<div class="text-black text-2xl font-medium flex flex-row items-center gap-x-4 pb-6">₹1,349.00 
+  <div class="text-sm font-light flex flex-row">M.R.P: <p class="line-through">₹2,200.00</p></div>
+</div>
+
+</div>
+
+</div>
+<!--3rd box-->
+<div class="h-[460px] w-[350px] bg-white">
+<p class="font-bold text-black text-2xl pb-6">Customers’ Most-Loved Fashion for you</p>
+  
+<div class="flex flex-wrap">
+  <img src="image16.jpg" class="px-8 pb-4">
+  <img src="image17.jpg" class="pb-4">
+  <img src="image18.jpg" class="px-12">
+  <img src="image19.jpg" class="px-12">
+</div>
+
+<p class="text-blue-600 hover:text-black py-6">Explore more</p>
+</div>
+<!--4th box-->
+<div class="h-[460px] w-[350px] bg-white">
+<p class="font-bold text-black text-2xl pb-10">Starting ₹299 | Action-packed toys for young explorers</p>
+  <div>
+<div class="relative flex flex-row justify-center items-center pb-10">
+  <i class="fa-solid fa-angle-left text-6xl text-black z-10 absolute left-0"></i>
+   <img src="image20.jpg" alt="left image" class="w-[100px] h-[180px] opacity-70 pr-6">
+  <img src="image21.jpg" alt="center image">
+   <img src="image22.jpg" alt="right image" class="w-[100px] h-[180px] opacity-70 pl-6">
+   <i class="fa-solid fa-angle-right text-6xl text-black z-10 absolute right-0"></i>
+</div>
+<p class="text-black pb-2">SELL4LESS Shinchan Soft Toy for Kids and Girls, Baby Gift, Birthday Present (32 cm)</p>
+
+<div class="text-black text-2xl font-medium flex flex-row items-center gap-x-4 pb-6">₹499.00 
+  <div class="text-sm font-light flex flex-row">M.R.P: <p class="line-through">₹1,899.00</p></div>
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+<!--product 4-->
+<div class="bg-white h-[290px] w-full my-6">
+  <div class="flex flex-row items-center gap-x-4 py-6">
+  <p class="text-black text-2xl font-bold">Up to 80% off | Treasures from artisans</p>
+  <p class="text-blue-600 hover:text-black hover:underline">See all offers</p>
+  </div>
+  <div class="flex flex-row justify-around items-center">
+<div class="bg-[url('image23.jpg')] bg-cover bg-center h-[200px] w-[100px]"></div>
+<div class="bg-[url('image24.jpg')] bg-cover bg-center h-[200px] w-[225px]"></div>
+<div class="bg-[url('image25.jpg')] bg-cover bg-center h-[195px] w-[270px]"></div>
+<div class="bg-[url('image26.jpg')] bg-cover bg-center h-[200px] w-[198px]"></div>
+<div class="bg-[url('image27.jpg')] bg-cover bg-center h-[200px] w-[190px]"></div>
+<div class="bg-[url('image28.jpg')] bg-cover bg-center h-[200px] w-[205px]"></div>
+<div class="bg-[url('image29.jpg')] bg-cover bg-center h-[200px] w-[81px]"></div>
+  </div>
+
+</div>
+<!--product 5-->
+<div class="bg-white h-[750px] w-full pt-8 pb-8">
+  <!--horitontal line 1-->
+  <div class="h-[1px] w-full bg-gray-500"></div>
+  <!--heading-->
+  <div class="flex flex-row items-center py-6">
+  <p class="text-black text-2xl font-bold pr-4">More items to consider</p>
+  <p class="text-blue-600 hover:text-black hover:underline">See more</p>
+  <p class="flex items-center text-black pl-[1060px]">Page 1 of 5</p>
+  </div>
+  <div class="flex flex-row justify-around items-center pb-10">
+    <!--left arrow-->
+    <div class="flex justify-center items-center h-[40px] w-[35px] rounded-[10px] text-gray-500 border-2 border-gray-500 text-[20px]"><i class="fa-solid fa-angle-left"></i>
+    </div>
+    <!--1st product-->
+<div>
+  <img src="image30.jpg" alt="First">
+  <p class="text-blue-600 hover:text-black hover:underline w-[185px]">Nervfit Newly Launched Blaze Smartwatch 1.4” LED Display, Bluetooth Calling, IP67 Waterproof, Heart Rate & SpO2...</p>
+<div class="flex flex-row items-center text-orange-500">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star-half-stroke"></i>
+  <p>55</p>
+</div>
+<p class="text-black text-[20px]">₹2,349.00</p>
+<div class="flex flex-row items-center text-black">Get it by <p class="font-bold pl-[4px]">Monday, July 21</p></div>
+<p class="text-black">FREE Delivery by Amazon</p>
+</div>
+<!--2nd product-->
+<div>
+  <img src="image31.jpg" alt="Second">
+  <p class="text-blue-600 hover:text-black hover:underline w-[185px]">CrossBeats Everest 2.0 2025 Smart Watch for Men 1.43" True AMOLED, Always ON Display...</p>
+<div class="flex flex-row items-center text-orange-500">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  <p>1046</p>
+</div>
+<div class="flex flex-row text-red-600">
+<div class="flex justify-center items-center h-[30px] w-[80px] bg-red-600 text-white">70% off</div>
+  <p class="pl-2 font-bold">Limited time deal</p>
+</div>
+<p class="text-black text-[20px]">₹2,999.00</p>
+<div class="text-black flex flex-row">M.R.P: <p class="line-through">₹9,999.00</p></div>
+<div class="flex flex-row items-center text-black">Get it by <p class="font-bold pl-[4px]">Monday, July 21</p></div>
+<p class="text-black">FREE Delivery by Amazon</p>
+</div>
+<!--3rd product-->
+<div>
+  <img src="image32.jpg" alt="Third">
+  <p class="text-blue-600 hover:text-black hover:underline w-[185px]">Fire-Boltt Asphalt Newly Launched Racing Edition Smart Watch 1.91” Full Touch Screen, Bluetooth Calling, Health Suite, 1...</p>
+<div class="flex flex-row items-center text-orange-500">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  <p>1,459</p>
+</div>
+<p class="text-black text-[20px]">₹2,199.00</p>
+<div class="flex flex-row items-center text-black">Get it by <p class="font-bold pl-[4px]">Monday, July 21</p></div>
+<p class="text-black">FREE Delivery by Amazon</p>
+</div>
+<!--4th product-->
+<div>
+  <img src="image33.jpg" alt="Fourth">
+  <p class="text-blue-600 hover:text-black hover:underline w-[185px]">Cult Ranger XR1-1.43" AMOLED Display,Outdoor Rugged Smartwatch for Men, Bluetooth Calling, 8 Days Battery, Continou...</p>
+<div class="flex flex-row items-center text-orange-500">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star-half-stroke"></i>
+  <i class="fa-regular fa-star"></i>
+  <p>249</p>
+</div>
+<p class="text-black text-[20px]">₹1,251.00</p>
+<div class="flex flex-row items-center text-black">Get it by <p class="font-bold pl-[4px]">Sunday, July 20</p></div>
+<p class="text-black">FREE Delivery by Amazon</p>
+</div>
+<!--5th product-->
+<div>
+  <img src="image34.jpg" alt="Fifth">
+  <p class="text-blue-600 hover:text-black hover:underline w-[185px]">Nervfit Orion S1 Smartwatch with 1.43" AMOLED Display, Functional Crown...</p>
+<div class="flex flex-row items-center text-orange-500">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  <p>135</p>
+</div>
+<div class="flex flex-row text-red-600">
+<div class="flex justify-center items-center h-[30px] w-[80px] bg-red-600 text-white">90% off</div>
+  <p class="pl-2 font-bold">Limited time deal</p>
+</div>
+<p class="text-black text-[20px]">₹2,179.00</p>
+<div class="text-black flex flex-row">M.R.P: <p class="line-through">₹21,999.00</p></div>
+<div class="flex flex-row items-center text-black">Get it by <p class="font-bold pl-[4px]">Sunday, July 20</p></div>
+<p class="text-black">FREE Delivery by Amazon</p>
+</div>
+<!--6th product-->
+<div>
+  <img src="image35.jpg" alt="Sixth">
+  <p class="text-blue-600 hover:text-black hover:underline w-[185px]">Nervfit Newly Launched Phoenix Smartwatch 1.85" NervX OLED Display, Bluetooth...</p>
+<div class="flex flex-row items-center text-orange-500">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <p>48</p>
+</div>
+<div class="flex flex-row text-red-600">
+<div class="flex justify-center items-center h-[30px] w-[80px] bg-red-600 text-white">80% off</div>
+  <p class="pl-2 font-bold">Limited time deal</p>
+</div>
+<p class="text-black text-[20px]">₹2,179.00</p>
+<div class="text-black flex flex-row">M.R.P: <p class="line-through">₹10,999.00</p></div>
+<div class="flex flex-row items-center text-black">Get it by <p class="font-bold pl-[4px]">Monday, July 21</p></div>
+<p class="text-black">FREE Delivery by Amazon</p>
+</div>
+<!--7th product-->
+<div>
+  <img src="image36.jpg" alt="Seventh">
+  <p class="text-blue-600 hover:text-black hover:underline w-[185px]">Smart Goat Latest Rugged & Sporty Smart Watch with Alexa, Bluetooth Calling,1.38" HD Display, Touch Scre...</p>
+<div class="flex flex-row items-center text-orange-500">
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star-half-stroke"></i>
+  <i class="fa-regular fa-star"></i>
+  <p>142</p>
+</div>
+<p class="text-black text-[20px]">₹2,199.00</p>
+<div class="flex flex-row items-center text-black">Get it <p class="font-bold pl-[4px]">Jul 23 - 26</p></div>
+<p class="text-black">FREE Delivery</p>
+</div>
+<!--right arrow-->
+ <div class="flex justify-center items-center h-[40px] w-[35px] rounded-[10px] text-gray-500 border-2 border-gray-500 text-[20px]">
+  <i class="fa-solid fa-angle-right"></i>
+    </div>
+
+
+  </div>
+<!--horitontal line 2-->
+<div class="h-[1px] w-full bg-gray-500"></div>
+<!--sign in-->
+<div class="flex flex-col justify-center items-center">
+  <p class="text-black text-2xl font-bold pt-8 pb-3">See personalized recommendations</p>
+  <div class="flex justify-center items-center h-[30px] w-[250px] rounded-full bg-yellow-300 text-black hover:bg-yellow-400">Sign in
+  </div>
+  <div class="flex flex-row text-black text-sm pb-6">
+   <p>New customer?</p>
+<p class="text-blue-600 underline hover:text-black pl-2">Start here</p>
+  </div>
+
+</div>
+<!--horitontal line 3-->
+<div class="h-[1px] w-full bg-gray-500"></div>
+
+
+</div>
+<!--footer-->
+<a href="#Back to top" class="flex justify-center items-center w-full h-[60px] text-white bg-gray-600 hover:bg-gray-400">Back to top</a>
+<div class="h-[530px] w-full text-white bg-gray-700">
+  <div class="flex flex-row pb-12 ml-8">
+<!--1st col-->
+<div class="pl-56">
+  <p class="font-bold pt-12 pb-2">Get to Know Us</p>
+  <p class="hover:underline pb-2">About Amazon</p>
+    <p class="hover:underline pb-2">Careers</p>
+      <p class="hover:underline pb-2">Press Releases</p>
+        <p class="hover:underline pb-2">Amazon Science</p>
+</div>
+<!--2nd col-->
+<div class="px-28">
+  <p class="font-bold pt-12 pb-2">Connect with Us</p>
+  <p class="hover:underline pb-2">Facebook</p>
+    <p class="hover:underline pb-2">Twitter</p>
+      <p class="hover:underline pb-2">Instagram</p>
+</div>
+<!--3rd col-->
+<div class="pr-28">
+  <p class="font-bold pt-12 pb-2">Make Money with Us</p>
+  <p class="hover:underline pb-2">Sell on Amazon</p>
+    <p class="hover:underline pb-2">Sell under Amazon Accelerator</p>
+      <p class="hover:underline pb-2">Protect and Build Your Brand</p>
+      <p class="hover:underline pb-2">Amazon Global Selling</p>
+      <p class="hover:underline pb-2">Supply to Amazon</p>
+      <p class="hover:underline pb-2">Become an Affiliate</p>
+      <p class="hover:underline pb-2">Fulfilment by Amazon</p>
+      <p class="hover:underline pb-2">Advertise Your Products</p>
+      <p class="hover:underline pb-2">Amazon Pay on Merchants</p>
+</div>
+<!--4th col-->
+<div class="pr-56">
+  <p class="font-bold pt-12 pb-2">Let Us Help You</p>
+  <p class="hover:underline pb-2">Your Account</p>
+    <p class="hover:underline pb-2">Returns Centre</p>
+      <p class="hover:underline pb-2">Recalls and Product Safety Alerts</p>
+      <p class="hover:underline pb-2">100% Purchase Protection</p>
+      <p class="hover:underline pb-2">Amazon App Download</p>
+      <p class="hover:underline pb-2">Help</p>
+</div>
+
+</div>
+<!--horitontal line 4-->
+<div class="h-[1px] w-full bg-gray-500"></div>
+<!--2nd box-->
+<div class="flex flex-row justify-center items-center pt-8">
+  <div class="bg-[url('amazon.jpg')] bg-cover bg-center w-[100px] h-[30px] mr-36"></div>
+  <!--language-->
+  <div class="flex flex-row items-center h-[45px] w-[155px] bg-gray-700 border-2 border-gray-500 rounded-[6px] hover:border-white mr-2">
+    <i class="fa-solid fa-globe px-3"></i>
+<select name="lang" id="lang" class="bg-gray-700 text-white border-none">
+  <option value="English">English</option>
+  <option value="Hindi">Hindi</option>
+  <option value="Telgu">Teglu</option>
+  <option value="Gujrati">Gujrati</option>
+  <option value="Tamil">Tamil</option>
+  <option value="Learn more" class="text-blue-600 hover:underline">Learn more</option>
+</select>
+</div>
+<!--Country-->
+<div class="flex flex-row items-center h-[45px] w-[120px] border-2 border-gray-500 rounded-[6px] hover:border-white">
+<div class="bg-[url('flag.png')] bg-cover bg-center h-[20px] w-[30px] ml-2"></div>
+  <p class="pl-2">India</p>
+</div>
+
+</div>
+
+</div>
+<!--last section-->
+<div class="w-full h-[340px] bg-gray-900">
+  <!--row 1-->
+  <div class="flex flex-row items-center gap-x-28 pb-5 pt-8 ml-52">
+    <!--1st-->
+<div class="hover:underline text-gray-400 text-[14px]">
+<p class="text-white">AbeBooks</p>
+<p>Books, art</p>
+<p>& collectibles</p>
+</div>
+<!--2nd-->
+<div class="hover:underline text-gray-400 text-[14px]">
+<p class="text-white">Amazon Web Services</p>
+<p>Scalable Cloud</p>
+<p>Computing Services</p>
+</div>
+<!--3rd-->
+<div class="hover:underline text-gray-400 text-[14px] mr-4">
+<p class="text-white">Audible</p>
+<p>Download</p>
+<p>Audio Books</p>
+</div>
+<!--4th-->
+<div class="hover:underline text-gray-400 text-[14px]">
+<p class="text-white">IMDb</p>
+<p>Movies, TV</p>
+<p>& Celebrities</p>
+</div>
+
+</div>
+<!--row 2-->
+ <div class="flex flex-row gap-x-28 pb-10 ml-52">
+    <!--1st-->
+<div class="hover:underline text-gray-400 text-[14px]">
+<p class="text-white">Shopbop</p>
+<p>Designer</p>
+<p>Fashion Brands</p>
+</div>
+<!--2nd-->
+<div class="hover:underline text-gray-400 text-[14px]">
+<p class="text-white">Amazon Business</p>
+<p>Everything For</p>
+<p>Your Business</p>
+</div>
+<!--3rd-->
+<div class="hover:underline text-gray-400 text-[14px]">
+<p class="text-white">Prime Now</p>
+<p>2-Hour Delivery</p>
+<p>on Everyday Items</p>
+</div>
+<!--4th-->
+<div class="hover:underline text-gray-400 text-[14px]">
+<p class="text-white">Amazon Prime Music</p>
+<p>100 million songs, ad-</p>
+<p>free</p>
+<p>Over 15 million podcast</p>
+<p>episodes</p>
+</div>
+
+</div>
+<!--Copyright-->
+<div class="flex flex-col justify-center items-center">
+<div class="flex flex-row gap-x-4">
+<p class="hover:underline">Conditions of Use & Sale</p>
+<p class="hover:underline">Privacy Notice</p>
+<p class="hover:underline">Interest-Based Ads</p>
+</div>
+<p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
